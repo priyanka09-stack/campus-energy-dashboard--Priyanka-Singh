@@ -6,33 +6,32 @@ from datetime import datetime
 import matplotlib.pyplot as plt
 
 
-# ----------------- Setup Logging -----------------
+# Setup Logging
 logging.basicConfig(
     filename='data_ingestion.log',
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 
-# ----------------- Initialize -----------------
+# initialize 
 data_folder = Path('data')  # Folder containing CSV files
 df_combined = pd.DataFrame()  # Master DataFrame
 
-# ----------------- Loop through CSV files -----------------
+# loop through CSV file
 for file_path in data_folder.glob('*.csv'):
     try:
-        # Read CSV with handling bad lines
+        
         df = pd.read_csv(file_path, on_bad_lines='skip')
         
-        # Normalize column names (fix lowercase issues)
+        
         df.columns = df.columns.str.strip().str.title()
-
-        # Fix required column names
+        
         if 'Timestamp' not in df.columns:
             raise ValueError(f"'Timestamp' column missing in {file_path.name}")
         if 'Consumption' not in df.columns:
             raise ValueError(f"'Consumption' column missing in {file_path.name}")
 
-        # Add metadata if not present
+       
         if 'Building' not in df.columns:
             df['Building'] = file_path.stem
         if 'Month' not in df.columns:
@@ -44,27 +43,25 @@ for file_path in data_folder.glob('*.csv'):
     except Exception as e:
         logging.error(f'Error with {file_path.name}: {e}')
 
-# ----------------- Final Output -----------------
 print("Merged DataFrame preview:")
 print(df_combined.head())
 print(f"Total rows merged: {len(df_combined)}")
 logging.info("Data ingestion completed successfully.")
-####################################################################################
+#Task 2
 
-# Timestamp must be datetime
 df_combined['Timestamp'] = pd.to_datetime(df_combined['Timestamp'])
 
-# ----------------- Function: Daily Totals -----------------
+# function- Daily Totals
 def calculate_daily_totals(df):
     daily_totals = df.groupby(['Building']).resample('D', on='Timestamp')['Consumption'].sum().reset_index()
     return daily_totals
 
-# ----------------- Function: Weekly Aggregates -----------------
+#  function: weekly aggregates
 def calculate_weekly_aggregates(df):
     weekly_totals = df.groupby(['Building']).resample('W-MON', on='Timestamp')['Consumption'].sum().reset_index()
     return weekly_totals
 
-# ----------------- Function: Building-wise Summary -----------------
+#Function- Building wise Summary
 def building_wise_summary(df):
     summary_dict = {}
     buildings = df['Building'].unique()
@@ -78,12 +75,12 @@ def building_wise_summary(df):
         }
     return summary_dict
 
-# ----------------- Run Aggregations -----------------
+# run aggregation
 daily_df = calculate_daily_totals(df_combined)
 weekly_df = calculate_weekly_aggregates(df_combined)
 building_summary = building_wise_summary(df_combined)
 
-# ----------------- Preview Outputs -----------------
+# Preview Outputs
 print("Daily Totals:")
 print(daily_df.head())
 
@@ -94,15 +91,14 @@ print("\nBuilding-wise Summary:")
 for building, stats in building_summary.items():
     print(f"{building}: {stats}")
 
-############################################################################
+#Task 3
 
-# ----------------- MeterReading Class -----------------
 class MeterReading:
     def __init__(self, timestamp, kwh):
         self.timestamp = timestamp
         self.kwh = kwh
 
-# ----------------- Building Class -----------------
+
 class Building:
     def __init__(self, name):
         self.name = name
@@ -126,7 +122,7 @@ class Building:
         }
         return report
 
-# ----------------- BuildingManager Class -----------------
+
 class BuildingManager:
     def __init__(self):
         self.buildings = {}
@@ -143,7 +139,7 @@ class BuildingManager:
             reports[name] = building.generate_report()
         return reports
 
-# ----------------- Example Usage -----------------
+
 manager = BuildingManager()
 
 for index, row in df_combined.iterrows():
@@ -154,13 +150,12 @@ all_reports = manager.generate_all_reports()
 for building, report in all_reports.items():
     print(report)
 
-######################################################################################################
 
-# ----------------- Setup Dashboard Figure -----------------
+#  Setup Dashboard Figure
 fig, axes = plt.subplots(3, 1, figsize=(14, 18))
 plt.subplots_adjust(hspace=0.4)
 
-# ----------------- 1. Trend Line: Daily Consumption -----------------
+#  Trend Line- Daily Consumption 
 for building in daily_df['Building'].unique():
     df_building = daily_df[daily_df['Building'] == building]
     axes[0].plot(df_building['Timestamp'], df_building['Consumption'], label=building)
@@ -170,7 +165,7 @@ axes[0].set_ylabel('kWh')
 axes[0].legend()
 axes[0].grid(True)
 
-# ----------------- 2. Bar Chart: Average Weekly Usage per Building -----------------
+#  Bar Chart- Average Weekly Usage per Building
 avg_weekly = weekly_df.groupby('Building')['Consumption'].mean().reset_index()
 axes[1].bar(avg_weekly['Building'], avg_weekly['Consumption'])
 axes[1].set_title('Average Weekly Energy Usage per Building')
@@ -178,7 +173,7 @@ axes[1].set_xlabel('Building')
 axes[1].set_ylabel('Average kWh')
 axes[1].grid(axis='y')
 
-# ----------------- 3. Scatter Plot: Peak-Hour Consumption -----------------
+# Scatter Plot: Peak-Hour Consumption 
 daily_df['Hour'] = daily_df['Timestamp'].dt.hour
 peak_hours = daily_df.groupby(['Building', 'Hour'])['Consumption'].max().reset_index()
 for building in peak_hours['Building'].unique():
@@ -194,7 +189,7 @@ plt.tight_layout()
 plt.savefig('dashboard.png')
 plt.show()
 
-# ----------------- Task 5 -----------------
+# Task 5
 output_folder = os.path.join(os.getcwd(), 'output')
 os.makedirs(output_folder, exist_ok=True)
 
