@@ -4,6 +4,7 @@ The objective of this project is to analyze electricity consumption across multi
 The solution automates data ingestion, cleaning, aggregation, visualization, and reporting using Python.
 
 Methodology
+
 Task 1 — Data Ingestion & Validation:
 
 Task 2 — Core Aggregation Logic
