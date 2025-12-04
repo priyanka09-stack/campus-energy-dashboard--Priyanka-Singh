@@ -1,0 +1,14 @@
+
+Campus Energy Executive Summary
+-----------------------------------
+Total Campus Consumption: 101.60 kWh
+Highest Consuming Building: building1
+Peak Load Hour: 11:00
+
+Daily Consumption Trends:
+2025-12-01: 101.60 kWh
+
+Weekly Consumption Trends:
+Week 49: 101.60 kWh
+
+Detailed CSV summaries saved in the 'C:\Users\LANOVO\Videos\capus_energy_daashboard.py\output' folder.

@@ -1,0 +1,107 @@
+2025-12-04 13:34:46,323 - INFO - Data ingestion completed successfully.
+2025-12-04 13:36:38,852 - INFO - Data ingestion completed successfully.
+2025-12-04 13:44:13,574 - INFO - Data ingestion completed successfully.
+2025-12-04 13:45:57,393 - INFO - Data ingestion completed successfully.
+2025-12-04 13:46:25,546 - INFO - Successfully loaded: building1.csv
+2025-12-04 13:46:25,565 - INFO - Successfully loaded: building2.csv
+2025-12-04 13:46:25,573 - INFO - Data ingestion completed successfully.
+2025-12-04 13:48:23,618 - INFO - Successfully loaded: building1.csv
+2025-12-04 13:48:23,621 - INFO - Successfully loaded: building2.csv
+2025-12-04 13:48:23,628 - INFO - Data ingestion completed successfully.
+2025-12-04 14:01:00,855 - INFO - Successfully loaded: building1.csv
+2025-12-04 14:01:00,858 - INFO - Successfully loaded: building2.csv
+2025-12-04 14:01:00,866 - INFO - Data ingestion completed successfully.
+2025-12-04 14:02:07,641 - INFO - Successfully loaded: building1.csv
+2025-12-04 14:02:07,644 - INFO - Successfully loaded: building2.csv
+2025-12-04 14:02:07,653 - INFO - Data ingestion completed successfully.
+2025-12-04 14:21:01,598 - INFO - Successfully loaded: building1.csv
+2025-12-04 14:21:01,601 - INFO - Successfully loaded: building2.csv
+2025-12-04 14:21:01,610 - INFO - Data ingestion completed successfully.
+2025-12-04 14:24:42,690 - INFO - Successfully loaded: building1.csv
+2025-12-04 14:24:42,694 - INFO - Successfully loaded: building2.csv
+2025-12-04 14:24:42,705 - INFO - Data ingestion completed successfully.
+2025-12-04 14:25:42,868 - INFO - Successfully loaded: building1.csv
+2025-12-04 14:25:42,872 - INFO - Successfully loaded: building2.csv
+2025-12-04 14:25:42,880 - INFO - Data ingestion completed successfully.
+2025-12-04 14:34:26,053 - INFO - Successfully loaded: building1.csv
+2025-12-04 14:34:26,057 - INFO - Successfully loaded: building2.csv
+2025-12-04 14:34:26,065 - INFO - Data ingestion completed successfully.
+2025-12-04 14:44:42,355 - INFO - Successfully loaded: building1.csv
+2025-12-04 14:44:42,359 - INFO - Successfully loaded: building2.csv
+2025-12-04 14:44:42,371 - INFO - Data ingestion completed successfully.
+2025-12-04 15:18:08,398 - INFO - Successfully loaded: building1.csv
+2025-12-04 15:18:08,402 - INFO - Successfully loaded: building2.csv
+2025-12-04 15:18:08,414 - INFO - Data ingestion completed successfully.
+2025-12-04 15:25:20,347 - INFO - Successfully loaded: building1.csv
+2025-12-04 15:25:20,351 - INFO - Successfully loaded: building2.csv
+2025-12-04 15:25:20,362 - INFO - Data ingestion completed successfully.
+2025-12-04 15:27:15,062 - INFO - Successfully loaded: building1.csv
+2025-12-04 15:27:15,066 - INFO - Successfully loaded: building2.csv
+2025-12-04 15:27:15,076 - INFO - Data ingestion completed successfully.
+2025-12-04 15:36:52,329 - INFO - Successfully loaded: building1.csv
+2025-12-04 15:36:52,332 - INFO - Successfully loaded: building2.csv
+2025-12-04 15:36:52,341 - INFO - Data ingestion completed successfully.
+2025-12-04 15:38:01,956 - INFO - Successfully loaded: building1.csv
+2025-12-04 15:38:01,959 - INFO - Successfully loaded: building2.csv
+2025-12-04 15:38:01,967 - INFO - Data ingestion completed successfully.
+2025-12-04 16:39:21,141 - INFO - Successfully loaded: building1.csv
+2025-12-04 16:39:21,145 - INFO - Successfully loaded: building2.csv
+2025-12-04 16:40:22,146 - INFO - Successfully loaded: building1.csv
+2025-12-04 16:40:22,151 - INFO - Successfully loaded: building2.csv
+2025-12-04 16:40:22,161 - INFO - Data ingestion completed successfully.
+2025-12-04 16:41:22,051 - INFO - Successfully loaded: building1.csv
+2025-12-04 16:41:22,055 - INFO - Successfully loaded: building2.csv
+2025-12-04 16:41:22,064 - INFO - Data ingestion completed successfully.
+2025-12-04 16:46:27,830 - INFO - Successfully loaded: building1.csv
+2025-12-04 16:46:27,834 - INFO - Successfully loaded: building2.csv
+2025-12-04 16:46:27,844 - INFO - Data ingestion completed successfully.
+2025-12-04 16:56:45,611 - INFO - Successfully loaded: building1.csv
+2025-12-04 16:56:45,615 - INFO - Successfully loaded: building2.csv
+2025-12-04 16:56:45,624 - INFO - Data ingestion completed successfully.
+2025-12-04 17:02:34,615 - INFO - Successfully loaded: building1.csv
+2025-12-04 17:02:34,620 - INFO - Successfully loaded: building2.csv
+2025-12-04 17:02:34,635 - INFO - Data ingestion completed successfully.
+2025-12-04 17:11:42,483 - INFO - Successfully loaded: building1.csv
+2025-12-04 17:11:42,486 - INFO - Successfully loaded: building2.csv
+2025-12-04 17:11:42,494 - INFO - Data ingestion completed successfully.
+2025-12-04 17:13:18,704 - INFO - Successfully loaded: building1.csv
+2025-12-04 17:13:18,707 - INFO - Successfully loaded: building2.csv
+2025-12-04 17:13:18,719 - INFO - Data ingestion completed successfully.
+2025-12-04 17:14:57,276 - INFO - Successfully loaded: building1.csv
+2025-12-04 17:14:57,279 - INFO - Successfully loaded: building2.csv
+2025-12-04 17:14:57,291 - INFO - Data ingestion completed successfully.
+2025-12-04 17:16:48,410 - INFO - Successfully loaded: building1.csv
+2025-12-04 17:16:48,414 - INFO - Successfully loaded: building2.csv
+2025-12-04 17:16:48,428 - INFO - Data ingestion completed successfully.
+2025-12-04 17:21:07,027 - INFO - Successfully loaded: building1.csv
+2025-12-04 17:21:07,030 - INFO - Successfully loaded: building2.csv
+2025-12-04 17:21:07,039 - INFO - Data ingestion completed successfully.
+2025-12-04 17:26:23,550 - INFO - Successfully loaded: building1.csv
+2025-12-04 17:26:23,554 - INFO - Successfully loaded: building2.csv
+2025-12-04 17:39:11,413 - INFO - Successfully loaded: building1.csv
+2025-12-04 17:39:11,416 - INFO - Successfully loaded: building2.csv
+2025-12-04 17:39:11,426 - INFO - Data ingestion completed successfully.
+2025-12-04 17:39:44,547 - INFO - Successfully loaded: building1.csv
+2025-12-04 17:39:44,551 - INFO - Successfully loaded: building2.csv
+2025-12-04 17:39:44,560 - INFO - Data ingestion completed successfully.
+2025-12-04 17:42:10,174 - INFO - Successfully loaded: building1.csv
+2025-12-04 17:42:10,181 - INFO - Successfully loaded: building2.csv
+2025-12-04 17:42:10,198 - INFO - Data ingestion completed successfully.
+2025-12-04 17:42:14,975 - INFO - Successfully loaded: building1.csv
+2025-12-04 17:42:14,978 - INFO - Successfully loaded: building2.csv
+2025-12-04 17:42:14,988 - INFO - Data ingestion completed successfully.
+2025-12-04 17:47:08,125 - INFO - Successfully loaded: building1.csv
+2025-12-04 17:47:08,128 - INFO - Successfully loaded: building2.csv
+2025-12-04 17:47:08,141 - INFO - Data ingestion completed successfully.
+2025-12-04 17:47:48,359 - INFO - Successfully loaded: building1.csv
+2025-12-04 17:47:48,365 - INFO - Successfully loaded: building2.csv
+2025-12-04 17:47:48,378 - INFO - Data ingestion completed successfully.
+2025-12-04 17:49:21,379 - INFO - Successfully loaded: building1.csv
+2025-12-04 17:49:21,384 - INFO - Successfully loaded: building2.csv
+2025-12-04 17:49:21,397 - INFO - Data ingestion completed successfully.
+2025-12-04 17:49:43,570 - INFO - Successfully loaded: building1.csv
+2025-12-04 17:49:43,573 - INFO - Successfully loaded: building2.csv
+2025-12-04 17:49:43,583 - INFO - Data ingestion completed successfully.
+2025-12-04 17:50:08,368 - INFO - Successfully loaded: building1.csv
+2025-12-04 17:50:08,371 - INFO - Successfully loaded: building2.csv
+2025-12-04 17:50:08,382 - INFO - Data ingestion completed successfully.
